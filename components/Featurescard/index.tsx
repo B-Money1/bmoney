@@ -52,7 +52,7 @@ interface FeatureProps {
 export function Feature({ description }: FeatureProps) {
   return (
     <div>
-      <Text size="md" color="dimmed" style={{ lineHeight: 1.6,color:"white" }}>
+      <Text size="md" color="dimmed" style={{ lineHeight: 1.6, color: "white" }}>
         <b>{description}</b>
       </Text>
     </div>
@@ -64,8 +64,8 @@ const useStyles = createStyles((theme) => ({
   description: {
     maxWidth: 600,
     margin: 'auto',
-    color:"#074a11",
-    textDecoration:"Underline",
+    color: "#074a11",
+    textDecoration: "Underline",
 
     '&::after': {
       content: '""',
@@ -80,10 +80,9 @@ const useStyles = createStyles((theme) => ({
   },
 
   card: {
-    background:'white',
-    border: `1px solid ${
-      theme.colorScheme === 'light' ? theme.colors.light[5] : theme.colors.gray[1]
-    }`,
+    background: 'white',
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+      }`,
   },
 }));
 
@@ -99,7 +98,7 @@ export function FeaturesGrid(title1) {
   return (
     <Container size="lg" py="xl">
       <SimpleGrid cols={2} spacing="xl" mt={50} breakpoints={[{ maxWidth: 980, cols: 2, spacing: "xl" },
-          { maxWidth: 755, cols: 1, spacing: "xl" },]}>
+      { maxWidth: 755, cols: 1, spacing: "xl" },]}>
         {features}
       </SimpleGrid>
     </Container>

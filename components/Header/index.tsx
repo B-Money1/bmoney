@@ -48,6 +48,10 @@ const useStyles = createStyles((theme) => ({
         theme.colorScheme === "dark"
           ? theme.colors.dark[6]
           : theme.colors.gray[0],
+      color:
+        theme.colorScheme === "dark"
+          ? theme.colors.gray[6]
+          : theme.colors.dark[6],
     }),
   },
 
@@ -58,9 +62,9 @@ const useStyles = createStyles((theme) => ({
 
     ...theme.fn.hover({
       backgroundColor:
-        theme.colorScheme === "light"
+        theme.colorScheme === "dark"
           ? theme.colors.dark[7]
-          : theme.colors.gray[0],
+          : '#ef4123',
     }),
 
     "&:active": theme.activeStyles,
@@ -138,7 +142,7 @@ export default function HeaderMegaMenu() {
   ));
 
   return (
-    <Box pb={10}>
+    <Box pb={10} style={{ background: '#ef4123' }}>
       <Group position="apart" sx={{ height: "100%" }}>
         <div id="logo" >
           <Image src={Logo} />
