@@ -1,36 +1,19 @@
+import Image from "next/image";
+import Link from "next/link";
+import openDemate from 'public/assets/images/open_demate.svg';
+import Bussiness from 'public/assets/images/business.svg';
+import Banner from 'public/assets/images/banner1210.jpg';
+import BannerMob from 'public/assets/images/banner1210-mob.jpg';
+
 export default function New() {
     return (
         <>
-            <link
-                rel="stylesheet"
-                type="text/css"
-                href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-            />
-            <link
-                rel="stylesheet"
-                type="text/css"
-                href="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/css/v-3.1/new-custome.css?v=1"
-            />
-            <link
-                rel="stylesheet"
-                type="text/css"
-                href="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/css/v-3.1/NwStyle.css"
-            />
             <div className="clearfix" />
             <div>
                 <div className="wper">
                     <div className="no_one_pad text-center">
                         <div className="innerPart">
-                            <img
-                                src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/no_one_img.png"
-                                className="hideMobile"
-                                alt="India`s Full service Discount Stock broker."
-                            />
-                            <img
-                                src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/no_one_img.png"
-                                className="hideLarge"
-                                alt="India`s Full service Discount Stock broker."
-                            />
+                            <Image src={Bussiness} alt="bussiness"></Image>
                             <div className="clearfix" />
                         </div>
                         <div>
@@ -43,13 +26,16 @@ export default function New() {
                                 </div>
                             </h1>
                             <div className="clearfix" />
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/zero-brokerage-plan/"
-                                className="orange_apply_now"
-                            >
-                                Know More
-                            </a>
+                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                <Link href="/auth/login" target="_blank" className="orange_apply_now">
+
+                                    <div style={{ background: '#ef4123', border: '1px solid #ef4123', padding: '5px 20px 5px 20px', marginRight: '20px', borderRadius: 5, width: 'fit-content', textAlign: 'center', alignSelf: 'center', color: 'white' }} >Login</div>
+                                </Link>
+                                <Link href="/auth/signup" target="_blank" className="orange_apply_now">
+
+                                    <div style={{ background: 'white', border: '1px solid #ef4123', padding: '5px 20px 5px 20px', borderRadius: 5, width: 'fit-content', textAlign: 'center', alignSelf: 'center', color: '#ef4123' }} >SignUp</div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,13 +73,11 @@ export default function New() {
                     <div className="largestCommodity_left" style={{ display: "none" }}>
                         <div>
                             <center>
-                                <a
-                                    href="https://e-kyc.rmoneyindia.com/e-kyc/"
-                                    target="_blank"
+                                <Link href="/auth/login" target="_blank"
                                     className="orange_apply_now mobileView"
                                 >
                                     5 Min Account Opening
-                                </a>
+                                </Link>
                                 <br />
                                 <br />
                             </center>
@@ -146,10 +130,10 @@ export default function New() {
                 <div className="clm-lft">
                     <div className="trdfst">
                         <h2 className="thdn2">
-                            <strong>Trade Faster with BMoney</strong>
+                            <strong>Trade Faster with B-Money</strong>
                         </h2>
                         <p className="pras">
-                            Grab every Market Opportunity with BMoney's Low Latency Trading
+                            Grab every Market Opportunity with B-Money's Low Latency Trading
                             Platforms.
                         </p>
                         <div className="row m-t-25">
@@ -181,7 +165,7 @@ export default function New() {
                                         Narnolia
                                     </li><br />
                                     <li>
-                                        Advanced Algo Trading with BMoney's TradeTron ModemAlgo, Algo
+                                        Advanced Algo Trading with B-Money's TradeTron ModemAlgo, Algo
                                         Bulls, Fox Trader, and more.
                                     </li><br />
                                 </ul>
@@ -203,6 +187,8 @@ export default function New() {
                             <div className="lftx">
                                 <h1 className="hdn1">
                                     <i>0</i>
+                                    <br />
+                                    <br />
                                     <span>
                                         <b>Zero</b>
                                         <br />
@@ -216,11 +202,11 @@ export default function New() {
                                         Direct <b>Mutual Funds</b>
                                     </h2>
                                     <p className="slgs">
-                                        Discover the Power of Direct Mutual Funds Invest with BMoney
+                                        Discover the Power of Direct Mutual Funds Invest with B-Money
                                         Today
                                     </p>
                                     <h3 className="hdn3">
-                                        Benefits Direct Mutual Funds with BMoney{" "}
+                                        Benefits Direct Mutual Funds with B-Money{" "}
                                     </h3>
                                     <ul className="lstng">
                                         <li>Lower Expense Ratio</li> <li>Better Returns</li>{" "}
@@ -229,12 +215,11 @@ export default function New() {
                                         <li>Easy to Switch</li> <li>Flexibility</li>
                                     </ul>
                                     <p className="slgs">
-                                        <a
-                                            href="https://rmoneyindia.com/zero-brokerage-direct-mutual-fund"
+                                        <Link href="/auth/login" target="_blank"
                                             className="btns"
                                         >
                                             Apply Now!
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </div>
@@ -245,30 +230,31 @@ export default function New() {
             </div>
             <div className="mtf">
                 <div className="wper">
-                    <a
-                        target="_blank"
-                        href="https://www.indiainxga.com/member/index.aspx?memberCode=100148"
+                    <Link href="/auth/login" target="_blank"
                     >
-                        <img
-                            className="DktImg"
-                            src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/banner1210.jpg"
-                            width="100%"
-                        />
-                        <img
-                            className="MktImg"
-                            src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/banner1210-mob.jpg"
-                            width="100%"
-                        />
-                    </a>
+                        <div className="DktImg">
+                            <Image
+                                layout="responsive"
+                                style={{ width: "100%" }}
+                                objectFit="cover"
+                                src={Banner}
+                            />
+                        </div>
+
+                    </Link>
+                    <Link href="/auth/login" target="_blank"
+                    >
+                        <div className="MktImg">
+                            <Image
+                                src={BannerMob}
+                                layout="responsive"
+                                style={{ width: "100%" }}
+                                objectFit="cover"
+                            />
+                        </div>
+                    </Link>
                 </div>
             </div>
-            {/* <div class="mtfhp" style="margin-bottom: 25px;">
-	<div class="wper">
-		<a target="_blank" href="https://www.indiainxga.com/member/index.aspx?memberCode=100148">
-			<img src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/banner1210.jpg" width="100%">
-		</a>
-	</div>
-</div> */}
             <div className="openAccountArea">
                 <div className="wper">
                     <div className="headingArea">
@@ -281,20 +267,15 @@ export default function New() {
                     </div>
                     <div className="clearfix" />
                     <div className="text-center">
-                        <a
-                            target="_blank"
-                            href="https://e-kyc.rmoneyindia.com/e-kyc/"
+                        <Link href="/auth/login" target="_blank"
                             className="orange_apply_now"
                         >
                             Apply Now
-                        </a>
+                        </Link>
                     </div>
                     <div className="clearfix" />
-                    <div className="largeImageArea">
-                        <img
-                            src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/openAccount.png"
-                            alt="BMoney Free Demat and Trading Account"
-                        />
+                    <div className="largeImageArea" >
+                        <Image alt="open_demate" src={openDemate}></Image>
                     </div>
                     <div className="clearfix" />
                 </div>
@@ -380,109 +361,89 @@ export default function New() {
                 <div className="wper">
                     <div className="hdn1">
                         <span>
-                            <a href="https://rmoneyindia.com/gyan">BMoney Gyan</a>
+                            <Link href="/">Investment Gyan</Link>
                         </span>
                     </div>
                     <ul className="R-GyanLst">
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/webinar/"
+                            <Link href="/" target="_blank"
                                 className="GynImg"
                             >
                                 <img src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/11/RmnyGyan1.png" />
-                            </a>
+                            </Link>
                             <h2 className="hdg2">
-                                BMoney <br />
+                                Investment <br />
                                 Webinars
                             </h2>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/webinar/"
+                            <Link href="/" target="_blank"
                                 className="btn"
                             >
                                 Read More
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/youtube-videos/"
+                            <Link href="/" target="_blank"
                                 className="GynImg"
                             >
                                 <img src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/11/RmnyGyan2.png" />
-                            </a>
+                            </Link>
                             <h2 className="hdg2">
-                                BMoney <br />
+                                Investment <br />
                                 Youtube
                             </h2>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/youtube-videos/"
+                            <Link href="/" target="_blank"
                                 className="btn"
                             >
                                 Read More
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/telegram/"
+                            <Link href="/" target="_blank"
                                 className="GynImg"
                             >
                                 <img src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/11/RmnyGyan3.png" />
-                            </a>
+                            </Link>
                             <h2 className="hdg2">
-                                BMoney <br />
+                                Investment <br />
                                 Telegram
                             </h2>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/telegram/"
+                            <Link href="/" target="_blank"
                                 className="btn"
                             >
                                 Read More
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/research-blog-beginners/"
+                            <Link href="/" target="_blank"
                                 className="GynImg"
                             >
                                 <img src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/11/RmnyGyan4.png" />
-                            </a>
+                            </Link>
                             <h2 className="hdg2">
-                                BMoney Blogs <br />
+                                Investment Blogs <br />
                                 for Beginners
                             </h2>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/research-blog-beginners/"
+                            <Link href="/" target="_blank"
                                 className="btn"
                             >
                                 Read More
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/research-blog-traders/"
+                            <Link href="/" target="_blank"
                                 className="GynImg"
                             >
                                 <img src="https://rmoneyindia.com/wp-content/themes/rmoney-8.14/assets/images/v-3.1/11/RmnyGyan5.png" />
-                            </a>
+                            </Link>
                             <h2 className="hdg2">
-                                BMoney Blogs <br />
+                                Investment Blogs <br />
                                 for Traders
                             </h2>
-                            <a
-                                target="_blank"
-                                href="https://rmoneyindia.com/research-blog-traders/"
+                            <Link href="/" target="_blank"
                                 className="btn"
                             >
                                 Read More
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -549,13 +510,11 @@ export default function New() {
                     </div>
                     <div className="clearfix" />
                     <div className="text-center">
-                        <a
-                            target="_blank"
-                            href="https://rmoneyindia.com/zero-brokerage-plan/"
+                        <Link href="/auth/login" target="_blank"
                             className="orange_apply_now"
                         >
                             Invest Now
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

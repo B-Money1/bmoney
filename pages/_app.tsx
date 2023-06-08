@@ -6,6 +6,9 @@ import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import '../styles/user/style.scss';
 import '../styles/new.scss'
+import '../styles/animate.css'
+import '../styles/new-custom.css'
+import '../styles/NwStyle.css'
 
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;

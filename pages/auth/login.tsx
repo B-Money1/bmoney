@@ -79,7 +79,7 @@ export default function Login() {
       </Head>
       <HeaderMegaMenu />
       <div className="authpage">
-        <Container size={420} my={40}>
+        <Container size={420}>
           <Title
             align="center"
             sx={(theme) => ({
@@ -89,11 +89,12 @@ export default function Login() {
           >
             Welcome back!
           </Title>
-          <Text color="dimmed" size="sm" align="center" mt={5}>
+          <Text color="white" size="sm" align="center" mt={5}>
             Do not have an account yet?{" "}
             <Anchor<"a">
               href="signup"
               size="sm"
+              style={{ color: "#EF4123" }}
               onClick={(event) => router.push('/auth/signup')}
             >
               Create account
@@ -116,6 +117,7 @@ export default function Login() {
             />
             <Group position="apart" mt="md">
               <Anchor<"a">
+                style={{ textDecoration: "none", color: "red" }}
                 onClick={(event) => router.push('/auth/forgot')}
                 href="#"
                 size="sm"
@@ -123,7 +125,7 @@ export default function Login() {
                 Forgot password?
               </Anchor>
             </Group>
-            <Button fullWidth mt="xl" onClick={loginFunction}>
+            <Button style={{ backgroundColor: "#EF4123" }} fullWidth mt="xl" onClick={loginFunction}>
               Log in
             </Button>
           </Paper>

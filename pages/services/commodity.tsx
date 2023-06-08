@@ -17,12 +17,12 @@ export default function Commodity() {
         <div className="commoditycard">
           <h1 className="pagetitle">Commodity Trading</h1>
           <div className="pagetext">
-            MegaCapital, the umbrella entity which houses the broking vertical is a
+            B-Money, the umbrella entity which houses the broking vertical is a
             multidimensional conglomerate with interests in various sectors. FMCG
-            – Hospitality – Tech – Finance MegaCapital always aims to provide value to
+            – Hospitality – Tech – Finance B-Money always aims to provide value to
             its stakeholders. With a motto “Aap Kijiye Kaamyabi Ki Tayaari, Baki
-            Humari Zimmedari” which captures the very essence of what MegaCapital
-            abides by. Every day at MegaCapital is an effort to raise the bar of
+            Humari Zimmedari” which captures the very essence of what B-Money
+            abides by. Every day at B-Money is an effort to raise the bar of
             “Excellence”.
           </div>
           <div>
@@ -46,16 +46,16 @@ export default function Commodity() {
             </ul>
           </div>
           <div >
-            <h2 className="pagesubtitle">Start Online Commodity Trading with MegaCapital</h2>
+            <h2 className="pagesubtitle">Start Online Commodity Trading with B-Money</h2>
 
             <p className="pagetext">
-              MegaCapital Broking, as a registered commodity broker with both, MCX &
+              B-Money Broking, as a registered commodity broker with both, MCX &
               NCDEX, provides you with a Commodity Trading Account for trading /
               investing in Commodities as per your objectives and goals. Commodity
               Markets are highly synced with global developments. The Commodity
               Research and Fundamental team keenly observe worldwide news and
               couple them with effective analysis to produce dependable research
-              calls. We at MegaCapital Traders Broking intend to make Commodity Trading
+              calls. We at B-Money Traders Broking intend to make Commodity Trading
               easy and effective for you.
             </p>
           </div>
@@ -63,14 +63,14 @@ export default function Commodity() {
 
         <div >
           <h2 className="pagesubtitle">
-            8 Reasons to begin Commodity Trading with MegaCapital Traders Broking in
+            8 Reasons to begin Commodity Trading with B-Money Traders Broking in
             Commodity Markets
           </h2>
           <FeaturesGrid />
         </div>
       </div>
       <div className={styles.cont2}>
-        <FeaturesCards title1={"Why Commodity Trading with MegaCapital Traders ?"} />
+        <FeaturesCards title1={"Why Commodity Trading with B-Money Traders ?"} />
       </div>
       <div className="footer">
         <FooterLinks />

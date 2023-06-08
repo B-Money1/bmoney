@@ -180,7 +180,7 @@ export default function AddBank() {
               mt="md"
               required
             />
-            <Button fullWidth mt="xl" type="submit"
+            <Button style={{ backgroundColor: "#EF4123" }} fullWidth mt="xl" type="submit"
               onClick={updateBankDetails}
             >
               Update Details

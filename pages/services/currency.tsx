@@ -23,7 +23,7 @@ export default function Commodity() {
                 Trading average at $5.09 trillion/Day
               </li>
               <li>
-                MegaCapital Traders Broking offers Currency Trading, Leveraged Currency
+                B-Money Traders Broking offers Currency Trading, Leveraged Currency
                 Trading, Arbitrage Desk & Currency Hedging Solutions for
                 investors, traders, arbitrageurs & hedgers.
               </li>
@@ -32,23 +32,23 @@ export default function Commodity() {
           </div>
           <div>
             <h2 className="pagesubtitle">
-              Start Currency Trading with MegaCapital Traders
+              Start Currency Trading with B-Money Traders
             </h2>
 
-            <p className="pagetext">Currency Trading in the Forex Markets majorly happens via the NSE-CDS & BSE-CDS (Currency Derivative Segment) MegaCapital Traders Broking, as a registered Forex Broker or Currency Broker provides you with a Forex Trading Account to Trade / Invest in this highly dynamic segment. Currency Trading is governed by global events and broadly involves entire economies. Our Experts analysts bring you reliable research for you to take beneficial position involving currency. Our proprietary Trading platform allows you to Trade in currencies anytime – anywhere.</p>
+            <p className="pagetext">Currency Trading in the Forex Markets majorly happens via the NSE-CDS & BSE-CDS (Currency Derivative Segment) B-Money Traders Broking, as a registered Forex Broker or Currency Broker provides you with a Forex Trading Account to Trade / Invest in this highly dynamic segment. Currency Trading is governed by global events and broadly involves entire economies. Our Experts analysts bring you reliable research for you to take beneficial position involving currency. Our proprietary Trading platform allows you to Trade in currencies anytime – anywhere.</p>
           </div>
         </div>
 
         <div>
           <h2 className="pagesubtitle">
-            8 Reasons to begin Commodity Trading with MegaCapital Broking in
+            8 Reasons to begin Commodity Trading with B-Money Broking in
             Commodity Markets
           </h2>
           <FeaturesGrid />
         </div>
       </div>
       <div className={styles.cont2}>
-        <FeaturesCards title1={"Why Currency Trading with MegaCapital Traders?"} />
+        <FeaturesCards title1={"Why Currency Trading with B-Money Traders?"} />
       </div>
       <FooterLinks />
     </div>

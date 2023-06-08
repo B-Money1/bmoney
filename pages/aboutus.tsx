@@ -12,12 +12,12 @@ export default function Aboutus() {
       <div className="pagecard">
         <h1 className="pagetitle">About Us</h1>
         <div className="pagetext">
-          MegaCapital, the umbrella entity which houses the broking vertical is a
+          B-Money, the umbrella entity which houses the broking vertical is a
           multidimensional conglomerate with interests in various sectors. FMCG
-          – Hospitality – Tech – Finance MegaCapital always aims to provide value to
+          – Hospitality – Tech – Finance B-Money always aims to provide value to
           its stakeholders. With a motto “Aap Kijiye Kaamyabi Ki Tayaari, Baki
-          Humari Zimmedari” which captures the very essence of what MegaCapital
-          abides by. Every day at MegaCapital is an effort to raise the bar of
+          Humari Zimmedari” which captures the very essence of what B-Money
+          abides by. Every day at B-Money is an effort to raise the bar of
           “Excellence”.
         </div>
       </div>

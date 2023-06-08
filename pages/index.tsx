@@ -49,7 +49,7 @@ import {
 //   return (
 //     <div>
 //       <Head>
-//         <title>Home | MegaCapital</title>
+//         <title>Home | B-Money</title>
 //       </Head>
 //       <div style={{ zIndex: 100000, position: 'relative', background: 'black' }}><HeaderMenu /></div>
 //       <div id="container">

@@ -83,10 +83,10 @@ export default function AdminLogin() {
       </Head>
       <HeaderMegaMenu />
       <div className="authpage">
-        <Container size={420} my={40}>
+        <Container size={420}>
           <Title
             align="center"
-            color="cyan"
+            color="white"
             sx={(theme) => ({
               fontFamily: `Greycliff CF, ${theme.fontFamily}`,
               fontWeight: 1200,
@@ -109,7 +109,7 @@ export default function AdminLogin() {
               mt="md"
               {...form.getInputProps("password")}
             />
-            <Button fullWidth mt="xl" onClick={loginFunction}>
+            <Button style={{ backgroundColor: "#EF4123" }} fullWidth mt="xl" onClick={loginFunction}>
               Log in
             </Button>
           </Paper>

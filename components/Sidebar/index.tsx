@@ -23,17 +23,15 @@ const useStyles = createStyles((theme, _params, getRef) => {
     header: {
       paddingBottom: theme.spacing.md,
       marginBottom: theme.spacing.md * 1.5,
-      borderBottom: `1px solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-      }`,
+      borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+        }`,
     },
 
     footer: {
       paddingTop: theme.spacing.md,
       marginTop: theme.spacing.md,
-      borderTop: `1px solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-      }`,
+      borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+        }`,
     },
 
     link: {
@@ -48,11 +46,11 @@ const useStyles = createStyles((theme, _params, getRef) => {
       fontWeight: 500,
 
       '&:hover': {
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        backgroundColor: theme.colorScheme === 'light' ? theme.colors.dark[6] : theme.colors.gray[0],
+        color: 'black',
 
         [`& .${icon}`]: {
-          color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+          color: 'black',
         },
       },
     },
@@ -67,9 +65,9 @@ const useStyles = createStyles((theme, _params, getRef) => {
       '&, &:hover': {
         backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor })
           .background,
-        color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+        color: theme.fn.variant({ variant: 'light', color: 'black' }).color,
         [`& .${icon}`]: {
-          color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+          color: theme.fn.variant({ variant: 'light', color: 'black' }).color,
         },
       },
     },
@@ -93,7 +91,7 @@ export function NavbarSimple() {
 
   const links = data.map((item) => (
     <a
-      className={cx(classes.link, `${ router.pathname == item.link}: ${item.label === active }`)}
+      className={cx(classes.link, `${router.pathname == item.link}: ${item.label === active}`)}
       href={item.link}
       key={item.label}
       onClick={(event) => {
@@ -102,8 +100,8 @@ export function NavbarSimple() {
         router.push(item.link)
       }}
     >
-      <div className='sidebaricon'><item.icon className={classes.linkIcon} stroke={1.5} /></div>
-      <span>{item.label}</span>
+      <div className='sidebaricon'><item.icon style={{ color: 'white' }} className={classes.linkIcon} stroke={1.5} /></div>
+      <span style={{ color: 'white' }}>{item.label}</span>
     </a>
   ));
 
@@ -115,14 +113,14 @@ export function NavbarSimple() {
 
       <div className={classes.footer}>
         <a href="#" className={classes.link} onClick={
-          (e)=>{
+          (e) => {
             e.preventDefault();
             logOut(user.uid);
             router.push('/auth/login')
           }
         }>
-          <div className='logouticon'><IconLogout className='sidebaricon' stroke={1.5} /></div>
-          <span>Logout</span>
+          <div className='logouticon'><IconLogout style={{ color: 'white' }} className='sidebaricon' stroke={1.5} /></div>
+          <span style={{ color: 'white' }}>Logout</span>
         </a>
       </div>
     </div>

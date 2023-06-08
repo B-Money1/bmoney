@@ -28,7 +28,7 @@ export default function Bank() {
         Router.push('/auth/login')
       }
     }
-  },[])
+  }, [])
 
   return (
     <div>
@@ -46,9 +46,9 @@ export default function Bank() {
 
               <h2>Payment</h2>
 
-              <Image src={qr} style={{ height: "80%", width: "150px" }} />
+              {/* <Image src={qr} style={{ height: "80%", width: "150px" }} /> */}
 
-              <Link href='https://pmny.in/2rknwRwKErj3'><h3>Click Here to Pay</h3></Link>
+              <Link href=''><h3>Click Here to Pay</h3></Link>
 
             </Paper>
             <Paper withBorder shadow="md" pl={30} pr={30} pt={5} mt={30} radius="md">

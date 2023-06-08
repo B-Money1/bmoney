@@ -127,7 +127,7 @@ export default function AddPdf() {
                 icon={<IconUpload size={14} />}
               />
 
-              <Button fullWidth mt="xl" type="submit" onClick={addPDF}>
+              <Button style={{ backgroundColor: "#EF4123" }} fullWidth mt="xl" type="submit" onClick={addPDF}>
                 Update Details
               </Button>
             </Paper>

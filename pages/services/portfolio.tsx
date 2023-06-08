@@ -17,10 +17,10 @@ export default function Portfolio() {
         <div>
           <h1 className="pagetitle">Portfolio Management</h1>
           <div>
-            <h2 className="pagesubtitle">MegaCapital Traders Portfolio Management Services</h2>
+            <h2 className="pagesubtitle">B-Money Traders Portfolio Management Services</h2>
             <ul className="pagetext">
               <li>
-                At MegaCapital Traders , our Portfolio Management Services are customized to meet your needs. This enables you to achieve your goals with our years of experience in making customized solutions work.
+                At B-Money Traders , our Portfolio Management Services are customized to meet your needs. This enables you to achieve your goals with our years of experience in making customized solutions work.
               </li>
               <li>
                 We factor in your risk appetite and financial goals to devise unique portfolios.
@@ -40,7 +40,7 @@ export default function Portfolio() {
               Best Portfolio Management Services in India
             </h2>
 
-            <p className="pagetext">Portfolio Management Services at MegaCapital Traders aims at appreciation of capital by making investments in sectors and growing companies while considering the risk potential and tenure of the investment. UBS Portfolio Management Services offer a wide range of PMS strategies that cater to different segments of clients. These are thematic strategies which aim at maximizing the investors wealth while making investments in diversified stocks in sectors which show growth at a fast pace. MegaCapital Traders PMS is a trusted name in the broking and distribution space owing to our portfolio managers who possess more than two decades of industry experience with demonstrated ability to create investment portfolios in varying markets.</p>
+            <p className="pagetext">Portfolio Management Services at B-Money Traders aims at appreciation of capital by making investments in sectors and growing companies while considering the risk potential and tenure of the investment. UBS Portfolio Management Services offer a wide range of PMS strategies that cater to different segments of clients. These are thematic strategies which aim at maximizing the investors wealth while making investments in diversified stocks in sectors which show growth at a fast pace. B-Money Traders PMS is a trusted name in the broking and distribution space owing to our portfolio managers who possess more than two decades of industry experience with demonstrated ability to create investment portfolios in varying markets.</p>
           </div>
         </div>
       </div>

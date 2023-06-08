@@ -36,12 +36,14 @@ export default function Dashboard() {
   const router = useRouter()
 
   useEffect(() => {
-    if(user){
-    if(!isAdmin(user)){
-      return()=>{
-      router.push("/auth/login");}
-    };}
-    else{
+    if (user) {
+      if (!isAdmin(user)) {
+        return () => {
+          router.push("/auth/login");
+        }
+      };
+    }
+    else {
       router.push("/auth/login");
     }
   });
@@ -64,7 +66,7 @@ export default function Dashboard() {
 
   const form = useForm({
     initialValues: {
-      userid:"",
+      userid: "",
       amount: "",
       type: "",
     },
@@ -74,64 +76,64 @@ export default function Dashboard() {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Transactions</title>
       </Head>
-    <div className="userpage">
-      <AppShell
-        padding="md"
-        navbar={<NavbarSimpleAdmin />}
-        header={<HeaderMegaMenu />}
-      >
-        <div className="idcard">
-        <Paper withBorder shadow="md" p={30} mt={30} radius="md">
-          <Title
-            align="center"
-            sx={(theme) => ({
-              fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-              fontWeight: 700,
-            })}
-          >
-            Add Transaction
-          </Title>
+      <div className="userpage">
+        <AppShell
+          padding="md"
+          navbar={<NavbarSimpleAdmin />}
+          header={<HeaderMegaMenu />}
+        >
+          <div className="idcard">
+            <Paper withBorder shadow="md" p={30} mt={30} radius="md">
+              <Title
+                align="center"
+                sx={(theme) => ({
+                  fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+                  fontWeight: 700,
+                })}
+              >
+                Add Transaction
+              </Title>
 
-          <NumberInput
-            label="User Id"
-            placeholder="User Id"
-            {...form.getInputProps("userid")}
-            mt="md"
-            required
-          />
-          <NumberInput
-            label="Amount"
-            placeholder="Amount"
-            {...form.getInputProps("amount")}
-            mt="md"
-            required
-          />
-          <Select
-            label="Type"
-            mt="md"
-            placeholder="Type"
-            data={[
-              {value:'payin', label:'Pay In'},
-              {value:'payout', label:'Pay Out'},
-            ]}
-            {...form.getInputProps("type")}
-          />
+              <NumberInput
+                label="User Id"
+                placeholder="User Id"
+                {...form.getInputProps("userid")}
+                mt="md"
+                required
+              />
+              <NumberInput
+                label="Amount"
+                placeholder="Amount"
+                {...form.getInputProps("amount")}
+                mt="md"
+                required
+              />
+              <Select
+                label="Type"
+                mt="md"
+                placeholder="Type"
+                data={[
+                  { value: 'payin', label: 'Pay In' },
+                  { value: 'payout', label: 'Pay Out' },
+                ]}
+                {...form.getInputProps("type")}
+              />
 
-          <Button fullWidth mt="xl" type="submit" onClick={addAmount}>
-            Update Details
-          </Button>
-        </Paper>
-        <Space/>
-        <Paper withBorder shadow="md" p={5} mt={30} radius="md">
-          <Center><h2>Transaction History</h2></Center>
-          <TableScrollAreaTransactionAdmin/>
-          </Paper>
-        </div>
-      </AppShell>
-    </div>
+              <Button style={{ backgroundColor: "#EF4123" }} fullWidth mt="xl" type="submit" onClick={addAmount}>
+                Update Details
+              </Button>
+            </Paper>
+            <Space />
+            <Paper withBorder shadow="md" p={5} mt={30} radius="md">
+              <Center><h2>Transaction History</h2></Center>
+              <TableScrollAreaTransactionAdmin />
+            </Paper>
+          </div>
+        </AppShell>
+      </div>
     </>
   );
 }

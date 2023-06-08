@@ -32,13 +32,13 @@ export default function Wealth() {
               Complete Wealth Management Solution
             </h2>
 
-            <p className="pagetext">Lead by a team of experts with tremendous experience in wealth creation, MegaCapital Traders offers turnkey wealth management solutions. Profile and family based personalization with complete discretion. Latest techniques and tools are harnessed to ensure maximum portfolio growth with thorough planning, research and management.</p>
+            <p className="pagetext">Lead by a team of experts with tremendous experience in wealth creation, B-Money Traders offers turnkey wealth management solutions. Profile and family based personalization with complete discretion. Latest techniques and tools are harnessed to ensure maximum portfolio growth with thorough planning, research and management.</p>
           </div>
 
         </div>
       </div>
       <div className={styles.cont2}>
-        <FeaturesCards title1={"Why wealth Management with MegaCapital Traders"} />
+        <FeaturesCards title1={"Why wealth Management with B-Money Traders"} />
       </div>
 
       <FooterLinks />

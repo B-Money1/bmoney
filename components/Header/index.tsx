@@ -58,7 +58,6 @@ const useStyles = createStyles((theme) => ({
   subLink: {
     width: "100%",
     padding: `${theme.spacing.xs}px ${theme.spacing.md}px`,
-    borderRadius: theme.radius.md,
 
     ...theme.fn.hover({
       backgroundColor:
@@ -130,7 +129,7 @@ export default function HeaderMegaMenu() {
   const { classes, theme } = useStyles();
 
   const links = mockdata.map((item) => (
-    <UnstyledButton className={classes.subLink} key={item.label}>
+    <UnstyledButton style={{ background: 'white' }} className={classes.subLink} key={item.label}>
       <Group noWrap align="flex-start">
         <div>
           <Text size="sm" weight={500}>
@@ -144,7 +143,7 @@ export default function HeaderMegaMenu() {
   return (
     <Box pb={10} style={{ background: '#ef4123' }}>
       <Group position="apart" sx={{ height: "100%" }}>
-        <div id="logo" >
+        <div id="logo" style={{ width: 70, height: 'auto' }} >
           <Image src={Logo} />
         </div>
         <Group
@@ -200,50 +199,44 @@ export default function HeaderMegaMenu() {
         </Group>
 
         <Burger
+          color="white"
           opened={drawerOpened}
           onClick={toggleDrawer}
           className={classes.hiddenDesktop}
         />
 
         <Drawer
+          style={{ color: '#ef4123' }}
           opened={drawerOpened}
           onClose={closeDrawer}
           size="100%"
           padding="md"
-          title="Navigation"
+          title="BMoney"
           className={classes.hiddenDesktop}
           zIndex={1000000}
         >
-          <ScrollArea sx={{ height: "calc(100vh - 60px)" }} mx="-md">
-            <Divider
-              my="sm"
-              color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-            />
+          <ScrollArea sx={{ height: "calc(100vh - 60px)" }} mx="-md" style={{ backgroundColor: '#ef4123' }}>
+
 
             <Link href="/">
-              <span className={classes.link}>Home</span>
+              <span className={classes.link} style={{ backgroundColor: '#ffffff1a', height: '10vh', border: '1px solid white' }} >Home</span>
             </Link>
-            <UnstyledButton className={classes.link} onClick={toggleLinks}>
+            <UnstyledButton className={classes.link} style={{ backgroundColor: '#ffffff1a', height: '10vh', border: '1px solid white' }} onClick={toggleLinks}>
               <Center inline>
                 <Box component="span" mr={5}>
                   Features
                 </Box>
-                <IconChevronDown size={16} color={theme.fn.primaryColor()} />
+                <IconChevronDown size={16} color="white" />
               </Center>
             </UnstyledButton>
             <Collapse in={linksOpened}>{links}</Collapse>
             <Link href="/aboutus" className={classes.link}>
-              <span className={classes.link}>About Us</span>
+              <span className={classes.link} style={{ backgroundColor: '#ffffff1a', height: '10vh', border: '1px solid white' }} >About Us</span>
             </Link>
             <Space />
             <Link href="/contactus" className={classes.link}>
-              <span className={classes.link}>Contact Us</span>
+              <span className={classes.link} style={{ backgroundColor: '#ffffff1a', height: '10vh', border: '1px solid white' }} >Contact Us</span>
             </Link>
-
-            <Divider
-              my="sm"
-              color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-            />
           </ScrollArea>
         </Drawer>
       </Group>

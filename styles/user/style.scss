@@ -110,14 +110,17 @@
     width: 6vw;
     height: 3vw;
     margin-top: 1vw;
-
-    background: #ef4123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 0.074vw solid #000000;
     border-radius: 3.701vw;
 }
 
 #signint2 {
     text-align: center;
-
+    margin: 0;
     font-family: '-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji';
     font-style: normal;
     font-weight: 300;
@@ -129,7 +132,7 @@
 
 #signupt2 {
     text-align: center;
-
+    margin: 0;
     font-family: '-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji';
     font-style: normal;
     font-weight: 300;
@@ -147,8 +150,10 @@
     height: 3vw;
     margin-left: 1vw;
     margin-top: 1vw;
-
-    border: 0.074vw solid #ef4123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.074vw solid #ffffff;
     border-radius: 3.701vw;
 
 }
@@ -177,7 +182,15 @@
     padding: 0.370vw;
     width: 100vw;
     height: 16.654vw;
-    background: linear-gradient(180deg, #00123b 0%, #00123bc5 29.69%, #00123b79 58.33%, rgba(0, 6, 19, 0.4) 100%);
+    background: hsla(9, 86%, 54%, 1);
+
+    background: linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -moz-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -webkit-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+
 }
 
 #featurestitle {
@@ -296,7 +309,15 @@
 #massagebox {
     height: 18.061vw;
     width: 90vw;
-    background: linear-gradient(91.43deg, #6D6DC2 -0.23%, #D6F5F5 111.74%);
+    background: hsla(9, 86%, 54%, 1);
+
+    background: linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -moz-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -webkit-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+
     border-radius: 1.480vw;
 }
 
@@ -332,7 +353,13 @@
     width: 91.118vw;
     padding-top: 0.441vw;
     border-radius: 2.441vw;
-    background: linear-gradient(91.43deg, #99CED4 -0.23%, #34484b 111.74%);
+    background: hsla(9, 86%, 54%, 1);
+
+    background: linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -moz-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -webkit-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
     margin-bottom: 15vw;
 }
 
@@ -361,7 +388,7 @@
 
 
 .servicecard {
-    background-image: url(../../public/assets/images/background.webp);
+    background-color: #ef4123;
     margin: 5vw;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -384,17 +411,45 @@
 
 .authpage {
     height: fit-content;
-    padding-bottom: 10vw;
-    background-image: linear-gradient(180deg, #020917 10%, #ffffff1a 29.69%, #ffffff1f 58.33%, rgba(255, 255, 255, 0.445) 100%);
+    padding-bottom: 50vh;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: hsla(9, 86%, 54%, 1);
+
+    background: linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -moz-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -webkit-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+
 
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, #020917 0%, #00000075 29.69%, #000000ad 58.33%, rgb(0, 0, 0) 100%);
+    background: hsla(9, 86%, 54%, 1);
+
+    background: linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -moz-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -webkit-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+
 }
 
 .userpage {
-    background-image: linear-gradient(180deg, #020917 20%, #ffffff1a 29.69%, #ffffff1f 58.33%, rgba(255, 255, 255, 0.445) 100%);
+    background: hsla(9, 86%, 54%, 1);
+
+    background: linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -moz-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -webkit-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+
 }
 
 .dashboard {
@@ -464,7 +519,13 @@
     padding: 5vw;
     text-align: left;
     border-radius: 3vw;
-    background: linear-gradient(91.43deg, #99CED4 -0.23%, #34484b 111.74%);
+    background: hsla(9, 86%, 54%, 1);
+
+    background: linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -moz-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
+
+    background: -webkit-linear-gradient(255deg, hsla(9, 86%, 54%, 1) 0%, rgb(252, 161, 101) 100%);
     margin-bottom: 15vw;
 }
 
@@ -717,7 +778,7 @@
     }
 
     .authpage {
-        padding-top: 50vw;
+        padding-top: 40vw;
         padding-bottom: 60vw;
     }
 

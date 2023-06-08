@@ -186,7 +186,7 @@ export default function Signup() {
       router.reload();
     }
   };
- 
+
   const handleVerificationCodeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setVerificationCode(String(value));
@@ -199,7 +199,7 @@ export default function Signup() {
       </Head>
       <HeaderMegaMenu />
       <div className="authpage">
-        <Container size={420} my={40}>
+        <Container size={420}>
           <Title
             align="center"
             sx={(theme) => ({
@@ -209,8 +209,8 @@ export default function Signup() {
           >
             Create a New Account !
           </Title>
-          <Text color="dimmed" size="sm" align="center" mt={5}>
-            Be a part of MegaCapital Family{" "}
+          <Text color="white" size="sm" align="center" mt={5}>
+            Be a part of B-Money Family{" "}
           </Text>
 
           <Paper withBorder shadow="md" p={30} mt={30} radius="md">
@@ -309,15 +309,15 @@ export default function Signup() {
                 icon={<IconUpload size={14} />}
                 required
               />
-              <div id="recaptcha-container"></div>
-              <Button fullWidth mt="xl" type="submit"
+              {!verificationId && (<div id="recaptcha-container"></div>)}
+              {!verificationId && (<Button fullWidth mt="xl" type="submit"
+                style={{ backgroundColor: "#EF4123" }}
                 onClick={handleSignUp}
               >
                 Send OTP
-              </Button>
+              </Button>)}
               {verificationId && (
                 <div>
-                  <label>Verification Code</label>
                   <TextInput
                     label="OTP"
                     placeholder="Enter Your OTP"
@@ -326,7 +326,7 @@ export default function Signup() {
                     required
                     mt="md"
                   />
-                  <Button fullWidth mt="xl" type="submit" onClick={handleVerifyCode}>Register</Button>
+                  <Button style={{ backgroundColor: "#EF4123" }} fullWidth mt="xl" type="submit" onClick={handleVerifyCode}>Register</Button>
                 </div>
               )}
             </form>

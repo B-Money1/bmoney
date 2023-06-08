@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import trading from '../../public/assets/images/trading.svg' ;
-import portfolio from '../../public/assets/images/portfolio.svg' ;
-import mutual from '../../public/assets/images/mutual.svg' ;
+import trading from '../../public/assets/images/trading.svg';
+import portfolio from '../../public/assets/images/portfolio.svg';
+import mutual from '../../public/assets/images/mutual.svg';
 
 
 export function Features() {
@@ -9,7 +9,7 @@ export function Features() {
     <div>
       <div id='features'>
         <div id="gradbox">
-          <p id="featurestitle">Why MegaCapital Broking is The Best Brokerage Firm for You ?</p>
+          <p id="featurestitle">Why B-Money Broking is The Best Brokerage Firm for You ?</p>
         </div>
         <div id="sets">
           <div className="set" id="set1">
@@ -31,40 +31,40 @@ export function Features() {
           </div>
           <div className="set" id="set4">
             <p className="settitle">Our Legacy</p>
-            <p className="settext" id="set4text">With a presence in over 12 State in India , MegaCapital has built a Indian & global brand and a legacy over the past 10 years.  us in a unique position to create the best is class experience.</p>
+            <p className="settext" id="set4text">With a presence in over 12 State in India , B-Money has built a Indian & global brand and a legacy over the past 10 years.  us in a unique position to create the best is class experience.</p>
           </div>
 
         </div>
       </div>
 
-        <div id="services">
-            <div id="tiles">
-              <div className="tile">
-                <Image src={trading} height="400"></Image>
-                <p className='tiletext'>Trading</p>
-              </div>
-              <div className="tile">
-                <Image src={portfolio} height="180px"></Image>
-                <p className='tiletext'>Profile Management</p>
-              </div>
-              <div className="tile">
-                <Image src={mutual} height="330px"></Image>
-                <p className='tiletext'>Mutual Fund</p>
-              </div>
-            </div>
-            </div>
+      <div id="services">
+        <div id="tiles">
+          <div className="tile">
+            <Image src={trading} height="400"></Image>
+            <p className='tiletext'>Trading</p>
+          </div>
+          <div className="tile">
+            <Image src={portfolio} height="180px"></Image>
+            <p className='tiletext'>Profile Management</p>
+          </div>
+          <div className="tile">
+            <Image src={mutual} height="330px"></Image>
+            <p className='tiletext'>Mutual Fund</p>
+          </div>
+        </div>
+      </div>
 
-            <div id='massage'>
-              <div id='massagebox'>
-                <p id='massagetitle'>Attention Investors!</p>
-                <p id='massagetext'>1.Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020.
-Update your mobile number & email Id with your stock broker/depository participant and receive OTP directly from depository on your <br></br>2.email id and/or mobile number to create pledge.
-<br></br>3.Pay 20% upfront margin of the transaction value to trade in cash market segment.
-<br></br>4.Check your Securities /MF/ Bonds in the consolidated account statement issued by NSDL/CDSL every month.
-</p>
-              </div>
-            </div>
-            </div>
+      <div id='massage'>
+        <div id='massagebox'>
+          <p id='massagetitle'>Attention Investors!</p>
+          <p id='massagetext'>1.Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020.
+            Update your mobile number & email Id with your stock broker/depository participant and receive OTP directly from depository on your <br></br>2.email id and/or mobile number to create pledge.
+            <br></br>3.Pay 20% upfront margin of the transaction value to trade in cash market segment.
+            <br></br>4.Check your Securities /MF/ Bonds in the consolidated account statement issued by NSDL/CDSL every month.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -5,11 +5,10 @@ import { MantineLogo } from '@mantine/ds';
 const useStyles = createStyles((theme) => ({
   footer: {
     marginTop: 120,
-    
+
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-    borderTop: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-    }`,
+    borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+      }`,
   },
 
   logo: {
@@ -34,7 +33,7 @@ const useStyles = createStyles((theme) => ({
   inner: {
     display: 'flex',
     justifyContent: 'space-between',
-    
+
     [theme.fn.smallerThan('sm')]: {
       flexDirection: 'column',
       alignItems: 'center',
@@ -69,7 +68,7 @@ const useStyles = createStyles((theme) => ({
   title: {
     fontSize: theme.fontSizes.lg,
     fontWeight: 700,
-    
+
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     marginBottom: theme.spacing.xs / 2,
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -81,9 +80,8 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
-    borderTop: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-    }`,
+    borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+      }`,
 
     [theme.fn.smallerThan('sm')]: {
       flexDirection: 'column',
@@ -107,15 +105,15 @@ interface FooterLinksProps {
 export function FooterLinks({ data }: FooterLinksProps) {
   const { classes } = useStyles();
 
-  
+
 
   return (
     <footer className={classes.footer}>
       <Container className={classes.afterFooter}>
         <Center>
-        <Text color="dimmed" size="sm">
-          © 2022 MegaCapital... All rights reserved.
-        </Text>
+          <Text color="dimmed" size="sm">
+            © 2022 BMoney... All rights reserved.
+          </Text>
         </Center>
       </Container>
     </footer>
