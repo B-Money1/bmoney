@@ -4,8 +4,43 @@ import openDemate from 'public/assets/images/open_demate.svg';
 import Bussiness from 'public/assets/images/business.svg';
 import Banner from 'public/assets/images/banner1210.jpg';
 import BannerMob from 'public/assets/images/banner1210-mob.jpg';
+import {
+    TickerSymbol,
+    TickerTape,
+    TickerTapeSymbol,
+} from "react-ts-tradingview-widgets";
 
 export default function New() {
+    const symbols: TickerSymbol[] = [
+        {
+            title: "",
+            proName: "NASDAQ:AMZN",
+        },
+        {
+            title: "",
+            proName: "NASDAQ:NFLX",
+        },
+        {
+            title: "",
+            proName: "BSE:FEDERALBNK",
+        },
+        {
+            title: "",
+            proName: "BSE:BANKBARODA",
+        },
+        {
+            title: "",
+            proName: "BSE:NIFTYBEES",
+        },
+        {
+            title: "",
+            proName: "BSE:SBIN",
+        },
+        {
+            title: "",
+            proName: "BSE:GUJGAS",
+        },
+    ];
     return (
         <>
             <div className="clearfix" />
@@ -40,6 +75,7 @@ export default function New() {
                     </div>
                 </div>
             </div>
+            <TickerTape symbols={symbols} colorTheme="dark"></TickerTape>
             <div className="largestCommodity" style={{ display: "none" }}>
                 <div className="wper">
                     <div className="largestCommodity_right">

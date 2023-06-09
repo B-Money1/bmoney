@@ -144,7 +144,7 @@ export default function HeaderMegaMenu() {
     <Box pb={10} style={{ background: '#ef4123' }}>
       <Group position="apart" sx={{ height: "100%" }}>
         <div id="logo" style={{ width: 70, height: 'auto' }} >
-          <Image src={Logo} />
+          <Link href="/"><Image src={Logo} /></Link>
         </div>
         <Group
           sx={{ height: "100%" }}
@@ -166,7 +166,7 @@ export default function HeaderMegaMenu() {
               <a href="#" className={classes.link}>
                 <Center inline>
                   <Box component="span" mr={5}>
-                    Features
+                    Services
                   </Box>
                   <IconChevronDown
                     size={16}
